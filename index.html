@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Crop Yield Prediction</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h1>Crop Yield Prediction</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Crop Prediction </a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Welcome to Crop Yield Prediction!</h2>
+      <p>
+        Our web application provides farmers and growers with a powerful tool to
+        predict crop yields based on soil properties and other relevant factors.
+      </p>
+      <p>
+        Try our yield prediction tool today and see how it can help you optimize
+        your crop yield!
+      </p>
+      <h1>Crop Prediction</h1>
+      <div class="container">
+        <form method="POST" action="/result">
+          <label for="N">Nitrogen (N):</label>
+          <input type="number" name="N" id="N" step="0.01" required /><br />
+
+          <label for="P">Phosphorus (P):</label>
+          <input type="number" name="P" id="P" step="0.01" required /><br />
+
+          <label for="K">Potassium (K):</label>
+          <input type="number" name="K" id="K" step="0.01" required /><br />
+
+          <label for="pH">Soil pH:</label>
+          <input type="number" name="pH" id="pH" step="0.01" required /><br />
+
+          <label for="EC">Electrical Conductivity (EC):</label>
+          <input type="number" name="EC" id="EC" step="0.01" required /><br />
+
+          <label for="OC">Organic Carbon (OC):</label>
+          <input type="number" name="OC" id="OC" step="0.01" required /><br />
+
+          <label for="B">Boron (B):</label>
+          <input type="number" name="B" id="B" step="0.01" required /><br />
+
+          <label for="Zn">Zinc (Zn):</label>
+          <input type="number" name="Zn" id="Zn" step="0.01" required /><br />
+
+          <label for="Fe">Iron (Fe):</label>
+          <input type="number" name="Fe" id="Fe" step="0.01" required /><br />
+
+          <label for="Mn">Manganese (Mn):</label>
+          <input type="number" name="Mn" id="Mn" step="0.01" required /><br />
+
+          <label for="Cu">Copper (Cu):</label>
+          <input type="number" name="Cu" id="Cu" step="0.01" required /><br />
+
+          <label for="S">Sulphur (S):</label>
+          <input type="number" name="S" id="S" step="0.01" required /><br />
+
+          <br /><br />
+          <button type="submit">Predict Crop</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Crop Yield Prediction</p>
+    </footer>
+  </body>
+</html>
